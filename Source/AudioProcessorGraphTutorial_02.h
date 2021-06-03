@@ -220,16 +220,16 @@ public:
         addAndMakeVisible (bypassSlot2);
         addAndMakeVisible (bypassSlot3);
 
-        auto inputDevice  = juce::MidiInput::getDefaultDevice();
-        auto outputDevice = juce::MidiOutput::getDefaultDevice();
+        //auto inputDevice  = juce::MidiInput::getDefaultDevice();
+        //auto outputDevice = juce::MidiOutput::getDefaultDevice();
 
         mainProcessor->enableAllBuses();
 
         deviceManager.initialiseWithDefaultDevices (2, 2);                          // [1]
         deviceManager.addAudioCallback (&player);                                   // [2]
-        deviceManager.setMidiInputDeviceEnabled (inputDevice.identifier, true);
-        deviceManager.addMidiInputDeviceCallback (inputDevice.identifier, &player); // [3]
-        deviceManager.setDefaultMidiOutputDevice (outputDevice.identifier);
+        //deviceManager.setMidiInputDeviceEnabled (inputDevice.identifier, true);
+        //deviceManager.addMidiInputDeviceCallback (inputDevice.identifier, &player); // [3]
+        //deviceManager.setDefaultMidiOutputDevice (outputDevice.identifier);
 
         initialiseGraph();
 
