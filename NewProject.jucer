@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="eJBquB" name="NewProject" projectType="guiapp" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" displaySplashScreen="1" jucerFormatVersion="1">
+  <MAINGROUP id="Ogsxgj" name="NewProject">
+    <GROUP id="{1429C278-975F-6BCA-48F7-CE080692421A}" name="Source">
+      <FILE id="TTGq4X" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+      <FILE id="prXOM5" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>
+      <FILE id="JTjtmU" name="MainComponent.cpp" compile="1" resource="0"
+            file="Source/MainComponent.cpp"/>
+    </GROUP>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1"/>
+  <EXPORTFORMATS>
+    <ANDROIDSTUDIO targetFolder="Builds/Android">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="NewProject"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="NewProject"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../Downloads/juce-6.0.8-linux/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../Downloads/juce-6.0.8-linux/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../Downloads/juce-6.0.8-linux/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../Downloads/juce-6.0.8-linux/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../Downloads/juce-6.0.8-linux/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../Downloads/juce-6.0.8-linux/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../Downloads/juce-6.0.8-linux/JUCE/modules"/>
+        <MODULEPATH id="juce_dsp" path="../../Downloads/juce-6.0.8-linux/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../Downloads/juce-6.0.8-linux/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../Downloads/juce-6.0.8-linux/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../Downloads/juce-6.0.8-linux/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../Downloads/juce-6.0.8-linux/JUCE/modules"/>
+        <MODULEPATH id="juce_opengl" path="../../Downloads/juce-6.0.8-linux/JUCE/modules"/>
+        <MODULEPATH id="juce_video" path="../../Downloads/juce-6.0.8-linux/JUCE/modules"/>
+      </MODULEPATHS>
+    </ANDROIDSTUDIO>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_dsp" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_video" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+</JUCERPROJECT>
