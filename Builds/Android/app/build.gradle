@@ -34,12 +34,18 @@ android {
              debuggable    true
              jniDebuggable true
              signingConfig signingConfigs.juceSigning
+             minifyEnabled false
+             shrinkResources  false
+             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
          }
          release {
              initWith release
              debuggable    false
              jniDebuggable false
+             minifyEnabled false
+             shrinkResources  false
              signingConfig signingConfigs.juceSigning
+             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
          }
     }
 
@@ -82,9 +88,9 @@ android {
 
     sourceSets {
         main.java.srcDirs +=
-            ["../../../../../Downloads/juce-6.0.8-linux/JUCE/modules/juce_core/native/javacore/init",
-             "../../../../../Downloads/juce-6.0.8-linux/JUCE/modules/juce_core/native/javacore/app",
-             "../../../../../Downloads/juce-6.0.8-linux/JUCE/modules/juce_gui_basics/native/javaopt/app"]
+            ["../../../juce-6.0.8-linux/JUCE/modules/juce_core/native/javacore/init",
+             "../../../juce-6.0.8-linux/JUCE/modules/juce_core/native/javacore/app",
+             "../../../juce-6.0.8-linux/JUCE/modules/juce_gui_basics/native/javaopt/app"]
 
         main.res.srcDirs +=
             []

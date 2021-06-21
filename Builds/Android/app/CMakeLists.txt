@@ -16,7 +16,6 @@ add_definitions("-DJUCE_ANDROID=1" "-DJUCE_ANDROID_API_VERSION=16" "-DJUCE_PUSH_
 
 include_directories( AFTER
     "../../../JuceLibraryCode"
-    "/home/lz/Downloads/juce-6.0.8-linux/JUCE/modules"
     "${ANDROID_NDK}/sources/android/cpufeatures"
 )
 
@@ -36,8 +35,6 @@ add_library( ${BINARY_NAME}
     SHARED
 
     "../../../Source/Main.cpp"
-    #"../../../Source/MainComponent.h"
-    #"../../../Source/MainComponent.cpp"
     "${JUCE_FOLDER}/JUCE/modules/juce_audio_basics/audio_play_head/juce_AudioPlayHead.h"
     "${JUCE_FOLDER}/JUCE/modules/juce_audio_basics/buffers/juce_AudioChannelSet.cpp"
     "${JUCE_FOLDER}/JUCE/modules/juce_audio_basics/buffers/juce_AudioChannelSet.h"
@@ -3181,8 +3178,6 @@ target_compile_options( ${BINARY_NAME} PRIVATE "-fsigned-char" )
 target_include_directories(${BINARY_NAME}
         PUBLIC
         ${JUCE_FOLDER}/JUCE/modules/)
-
-
 
 if( JUCE_BUILD_CONFIGURATION MATCHES "DEBUG" )
     target_compile_options( ${BINARY_NAME} PRIVATE)
